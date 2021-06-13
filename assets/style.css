@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  /* align-items: center; */
+}
+.logo {
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  padding-left: 5px;
+  /* margin: 5px; */
+  box-shadow: 10px;
+  background: #f5f5f5;
+  font-size: 16px; 
+  font-weight: 300;
+}
+h1{
+  background-color:#f5f5f5 ;
+}
+.center {
+  position: absolute;
+  align-items: center;
+  top: 10%;
+  left: 20%;
+  right: 20%;
+  height: 800px;
+  width: 100%;
+  margin-bottom:20px;
+  /* transform: translateY(-30%,-30%);
+    -webkit-transform: translateY(-30%,-30%);
+    -moz-transform: translateY(-30%,-30%);
+    -ms-transform: translateY(-30%,-30%);
+    -o-transform: translateY(-30%,-30%); */
+  /* width: 600px; */
+  /* background: lightgray; */
+}
+.center h1 {
+  text-align: left;
+  color: rgb(192, 191, 191);
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+h2 {
+  /* text-align: left; */
+  color: black;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+input {
+  width: 100%;
+  padding: 0 5px;
+  /* height: 20px; */
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #cecece;
+  background: none;
+  outline: none;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+/* label {
+  color: black;
+  /* transform: translateY(-50%); */
+  /* font-size: 14px;
+  pointer-events: none; */
+  /* -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%); */
+/* } */
+/* .form-text form select option {
+  color: lightgray; 
+} */
+.parent {
+  /* height: 650px; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  /* justify-content: space-between; */
+  /* margin-bottom: 20px; */
+}
+
+/* .container input ~ .checkmark {
+    
+    display: block;
+} */
+.main:checked:before {
+  background-color: green;
+}
+.main:checked:after {
+  background-color: green;
+}
+.checkout-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-color: #cecece;
+  box-shadow: 0 1px 1px 0 #e7e7e7; 
+}
+.panel-body {
+  padding: 45px 80px 0;
+  flex: 1;
+  padding: 30px 60px 0;
+}
+/* 
+.title {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #2e2e2e;
+} */
+.progress-bar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 10 px;
+  /* justify-content: space-between; */
+}
+
+.step-active {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 23px;
+  height: 23px;
+  margin-bottom: 30px;
+  border: 6px solid #3f51b5; 
+  border-radius: 50%;
+  background-color: #3f51b5; 
+  content: '';
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.step-deactive {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 23px;
+  height: 23px;
+  margin-bottom: 30px;
+  border: 6px solid #cfcfcf; 
+  border-radius: 50%;
+  background-color: #cfcfcf; 
+  content: '';
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.step-active:nth-child(1):after{
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  content: 'Shipping Address';
+}
+.step-deactive:nth-child(2):after{
+
+  content: 'Paymentg details';
+}
+.step-deactive:nth-child(3):after{
+  content: 'Review your order';
+}
+
+.step-active:after {
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 25px;
+  width: 200px;
+  /* height: 4px; */
+  content: '';
+  /* background-color: #efefef; */
+  /* margin-top: 3px; */
+  /* margin-bottom: 25px; */
+  /* margin-right: 20px; */
+  font-size: 15px ;
+}
+.step-deactive:after {
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 25px;
+  width: 200px;
+  /* height: 4px; */
+  content: '';
+  /* background-color: #efefef; */
+  /* margin-top: 3px; */
+  /* margin-bottom: 25px; */
+  /* margin-right: 20px; */
+  font-size: 15px ;
+}
+input[type='checkbox'] {
+  /* float: left; */
+  width: 20px;
+}
+input[type='checkbox'] + label {
+  display: block;
+  width: 20px;
+}
+.step:before {
+  color: #2e2e2e;
+  position: absolute;
+  top: 40px;
+}
+
+/* .step:last-child:after {
+  content: none;
+}
+.step active .step.active {
+  background-color: #f62f5e;
+}
+.step.active:after {
+    background-color: #f62f5e;
+  }
+  .step.active:before {
+    color: #f62f5e;
+  }
+  .step.active + .step {
+    background-color: #f62f5e;
+  }
+  .step.active + .step:before {
+    color: #f62f5e;
+  }
+   
+.step:nth-child(1):before {
+    content: 'Delivery';
+  }
+  .step:nth-child(2):before {
+    right: -40px;
+    content: 'Confirmation';
+  }
+  .step:nth-child(3):before {
+    right: -30px;
+    top: -20px;
+    content: 'Payment';
+  }
+  .step:nth-child(4):before {
+    right: 0;
+    content: 'Finish';
+  }
+.main {
+  display: block;
+} */
+.container{ width: 800px; height: 768px; border-left: 2px solid #e9e9e9; margin-left: 15%;margin-right: 20%;
+  border-right: 2px solid #e9e9e9;  
+}
+.main:checked::after{
+  background-color: green;
+}
+.main:checked::before{
+  background-color: green;
+}
+.main{
+border:2px dotted #00f;
+display:block;
+background:#ff0000;
+}
+button {
+  /* background-color: #4CAF50; */
+  border: none;
+  /*color: white;
+  */padding: 10px 20px;
+  background-color: #3f51b5;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+  border-radius:6px ;
+  box-shadow: 2px;
+  -webkit-border-radius:6px ;
+  -moz-border-radius:6px ;
+  -ms-border-radius:6px ;
+  -o-border-radius:6px ;
+}
+  /* input[type="checkbox"] {
+    background-color: green;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+} */
+.main input:checked ~ .marked{
+  background-color: green;
+}

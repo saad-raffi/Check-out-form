@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo">
+    <h1>Company Name</h1>
+  </div>
+  <div class="container">
+  <div class="checkout-panel">
+    <div class="panel-body">
+      <h2 class="title">Checkout</h2>
+      <div class="progress-bar">
+        <div class="step-active">1</div>
+        <div class="step-deactive">2</div>
+        <div class="step-deactive">3</div>
+        <!-- <div class="step">4</div> -->
+      </div>
+      <h2><strong>Shipping Address</strong></h2>
+      <form class="form-text" action="">
+        <!-- <label></label> -->
+        <div class="parent">
+          <div class="names"><input class="imp" type="text" placeholder="First Name*"></div>
+          <!-- <label></label> -->
+          <div class="names"><input class="imp" type="text" placeholder="Last Name*"></div>
+        </div>
+        <!-- <label>Address Line 1</label> -->
+        <input type="text" placeholder="Address Line 1*">
+        <!-- <label>Address Line 2</label> -->
+        <input type="text" placeholder="Address Line 2">
+        <!-- <label>City</label> -->
+        <div class="parent">
+          <div class="names"><input class="imp" type="text" placeholder="City*"></div>
+          <!-- <label>State/Province/Region</label> -->
+          <div><input class="imp" type="text" placeholder="State/Province/Region"></div>
+        </div>
+        <!-- <label>Zip/Postal Code</label> -->
+        <div class="parent">
+          <div class="names"><input class="imp" type="text" placeholder="Zip/Postal Code*"></div>
+          <!-- <label>Country</label> -->
+          <div><input class="imp" type="text" placeholder="Country*"></div>
+        </div>
+        <!-- <div class="check"><input type="checkbox">Use this address for payment details.</div>  -->
+        <label class="main">
+          <input type="checkbox" checked="checked">Use this address for payment details 
+          <span class="marked"></span>
+        </label>
+      </form>
+      <div class="btn"><button value="NEXT">Next</button></div>
+    </div>
+  </div>
+ </body> 
+</html>

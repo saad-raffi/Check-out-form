@@ -1,2 +1,1 @@
-# Check-out-form
-google checkout form for e-commerce site
+This is the checkout form using roboto font
